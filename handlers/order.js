@@ -37,7 +37,7 @@ export function orderPizza(request, reply) {
   });
 
   payload.items.forEach(item => order.addItem(new Item(item)));
-  order.validate(result => reply(result);
+  order.validate(result => reply(result));
 }
 /*
 orderPizza({payload:

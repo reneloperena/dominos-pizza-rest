@@ -2,9 +2,7 @@ import Hapi from 'hapi';
 import * as orderHandler from './handlers/order';
 
 const server = new Hapi.Server();
-server.connection({ port: 3000 });
-
-server.start((err) => {
+server.connection({ port: 80 });
 
 server.route({
   method: 'GET',
