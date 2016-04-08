@@ -37,9 +37,9 @@ export function orderPizza(request, reply) {
   });
 
   payload.items.forEach(item => order.addItem(new Item(item)));
-  order.validate(result => console.log(result));
+  order.validate(result => reply(result);
 }
-
+/*
 orderPizza({payload:
   {
     items:  [{ code: 'P14IBKSPF', quantity: 1, options: []}],
@@ -56,4 +56,4 @@ orderPizza({payload:
         email: 'rene.loperena.garcia@adp.com'
       }
     }
-  });
+  });*/
